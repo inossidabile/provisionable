@@ -7,3 +7,6 @@
         ssh:
           program_name: sshd
           command: "/usr/sbin/sshd -D"
+  tasks:
+    - name: Git 
+      apt: name=git state=latest
