@@ -10,4 +10,4 @@ ADD files/ansible.yml /provisioning/
 RUN provision
 
 EXPOSE 22
-CMD /usr/bin/supervisord -c /etc/supervisor/supervisord.conf
+CMD /usr/bin/supervisord -c /etc/supervisor/supervisord.conf -n
