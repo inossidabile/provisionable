@@ -1,1 +1,9 @@
-- hosts: docker
+- hosts: local
+  roles:
+    - willshersystems.sshd
+    - lcacciagioni.supervisord
+    - role: jcsaaddupuy.supervisord_config
+      supervisord_programs:
+        ssh:
+          program_name: sshd
+          command: "/usr/sbin/sshd -D"

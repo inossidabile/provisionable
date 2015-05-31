@@ -1,2 +1,2 @@
 #!/bin/bash
-ansible-playbook /provisioning/ansible.yml -c docker
+ansible-playbook /provisioning/ansible.yml -c local
